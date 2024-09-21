@@ -28,4 +28,16 @@ let petAge = 5;
 let petType = 'Dog';
 let favoriteToy = 'Rubber Bone';
 
-// Your code to generate pet profile using template literals goes here
+// Your code to generate pet profile using string literals goes here.
+let petProfile1 = 'Pet Name:' + petName + ' ' + 'Pet Age:' + petAge + ' ' + 'Type of pet:' + petType + ' ' + 'Favorite toy:' + favoriteToy;
+console.log(petProfile1);
+
+// Your code to generate pet profile using template literals goes here.
+let petProfile2 = `Pet Name:${petName} Pet Age:${petAge} Type of pet:${petType} Favorite Toy:${favoriteToy}`;
+console.log(petProfile2);
+
+// Bonus Challenge
+let petHobbies = 'Swimming';
+let petFavoriteFood = 'Salmon';
+let petProfile3 = `Pet Name:${petName} Pet Age:${petAge} Type of pet:${petType} Favorite Toy:${favoriteToy} Pet Hobbies:${petHobbies} Favorite food:${petFavoriteFood}`;
+console.log(petProfile3);

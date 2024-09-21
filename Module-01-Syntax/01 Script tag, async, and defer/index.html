@@ -13,5 +13,20 @@
     <!-- Script tags will be added here -->
     <!-- Example: <script src="script1.js"></script> -->
 
+    <!--Task 1: Scripts loaded in the order they appeared in the HTML-->
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+
+    <!--Task 2: The scripts did not appear in order,they appeared acording to which script loaded first-->
+     <script async src="script1.js"></script>
+     <script async src="script2.js"></script>
+     <script async src="script3.js"></script>
+
+<!--Task 3:The whole HTML document is parsed first and when it is done,the scripts are then loaded-->
+<script defer src="script1.js"></script>
+<script defer src="script2.js"></script>
+<script defer src="script3.js"></script>
+
 </body>
 </html>
